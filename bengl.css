@@ -1,0 +1,17 @@
+/* Basic styles for the slider container */
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Styles for the slider */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual slide styles */
+.slider img {
+    width: 100%;
+    height: auto;
+}

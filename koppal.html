@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reveal Website Elements on Scroll - HTML , CSS & Javascript</title>
+        <link rel="stylesheet" href="bangaluru.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </head>
+    <body>
+
+        <section class="sec-01">
+            <div class="container">
+                <h2 class="main-title">Hampi's Feathers Resort </h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="ham feat.jpg" alt=""> 
+                    </div>
+                   <div class="text-box">
+                  <h3> <p align="center">Click Here For More</p> </h3>
+                    <header>
+                        <nav class="navigation">
+                        <a href="https://www.hampisfeathers.com/"><p align="center">DETAILS</p></a>
+                        </nav>
+                        </header>
+                  </div>
+                </div>
+                <div class="media-icons">
+                    <a href="https://www.instagram.com/reel/CrLRokCrO6_/" class="icons"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/Hampisboulders/" class="icons"><i class="fab fa-twitter"></i></a>
+                    <a href="https://twitter.com/clubmahindra/status/1152427913461010432?lang=en" class="icons"><i class="fab fa-twitter"></i></a>
+                    <a href="https://goo.gl/maps/ohnAMniZNdaAFKBd9" class="icons"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+         </section>   
+
+         <section class="sec-02">
+            <div class="container">
+                <h2 class="main-title">Gowri Resort</h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="gowri.jpg" alt=""> 
+                    </div>
+                   <div class="text-box">
+                    <h3> <p align="center">Click Here For More</p> </h3>
+                    <header>
+                        <nav class="navigation">
+                        <a href="http://www.hampigowri.com/"><p align="center">DETAILS</p></a>
+                        </nav>
+                        </header>
+                  </div>
+                </div>
+                <div class="media-icons">
+                    <a href="https://www.facebook.com/hampigowri/" class="icons"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/gauriresort/" class="icons"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/gowri_tweets?lang=en" class="icons"><i class="fab fa-twitter"></i></a>
+                    <a href="https://goo.gl/maps/GnuUA9c5u9yxxYFa6" class="icons"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+         </section>   
+
+         <section class="sec-03">
+            <div class="container">
+                <h2 class="main-title">Campfire Circle Adventure Camp Resort </h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="camp.jpg" alt=""> 
+                    </div>
+                   <div class="text-box">
+                    <h3> <p align="center">Click Here For More</p> </h3>
+                    <header>
+                        <nav class="navigation">
+                        <a href="https://campfirecircle.in/"><p align="center">DETAILS</p></a>
+                        </nav>
+                        </header>
+                  </div>
+                </div>
+                <div class="media-icons">
+                    <a href="https://www.facebook.com/Campfirecircle/" class="icons"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/campfirecircle/?hl=en" class="icons"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/campfireresort" class="icons"><i class="fab fa-twitter"></i></a>
+                    <a href="https://goo.gl/maps/f3Udy5g29kagYdYF7" class="icons"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+         </section>   
+
+         <section class="sec-04">
+            <div class="container">
+                <h2 class="main-title">Iroomz Navyyas Resort</h2>
+                <div class="content">
+                    <div class="image">
+                        <img src="navya'.jpg" alt=""> 
+                    </div>
+                   <div class="text-box">
+                    <h3> <p align="center">Click Here For More</p> </h3>
+                    <header>
+                        <nav class="navigation">
+                        <a href="https://www.yatra.com/hotels/hotels-in-hospet/navyyas-resort"><p align="center">DETAILS</p></a>
+                        </nav>
+                        </header>
+                  </div>
+                </div>
+                <div class="media-icons">
+                    <!-- <a href="#" class="icons"><i class="fab fa-facebook"></i></a> -->
+                    <!-- <a href="#" class="icons"><i class="fab fa-instagram"></i></a> -->
+                    <!-- <a href="#" class="icons"><i class="fab fa-twitter"></i></a> -->
+                    <a href="https://goo.gl/maps/aEp8gprMi91qoV5K6" class="icons"><i class="fab fa-google"></i></a>
+                </div>
+            </div>
+         </section>   
+
+         
+
+         <script>
+            //common reveal option to creat reveal animation
+            ScrollReveal({ 
+                reset: true,
+                distance: '60px',
+                duration: 2500,
+                delay: 400
+             });
+    
+             //target elements , and specify options to creat reveal animations
+    
+             ScrollReveal().reveal('.main-title, .section-title', { delay: 500, origin:'left' });
+             ScrollReveal().reveal('.sec-01  .image, .info', { delay: 600, origin:'bottom' });
+             ScrollReveal().reveal('.text-box', { delay: 700, origin:'right' });
+             ScrollReveal().reveal('.media-icons i', { delay: 500, origin:'bottom', interval: 200  });
+             ScrollReveal().reveal('.sec-02 .image, .sec-04 .image', { delay: 500, origin:'top'  });
+             ScrollReveal().reveal('.sec-03 .image', { delay: 500, origin:'bottom'  });
+           //  ScrollReveal().reveal('.sec-05 .image', { delay: 500, origin:'left'  });
+             ScrollReveal().reveal('.media-info li', { delay: 500, origin:'left', interval: 200  });
+             
+         </script>
+    
+        </body>
+        </html>
